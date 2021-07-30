@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+.filter {
+    margin-top: 60px;
+}
+.ta-center {
+    margin-top: 10px;
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+.tb-board {
+    margin-top: 40px;
+    .util-bar {
+        margin-bottom: 20px;
+        line-height: 30px;
+        .total {
+            display: inline-block;
+            font-size: 14px;
+            color: #929394;
+            span {
+                font-weight: bold;
+            }
+        }
+        .btn {
+            float: right;
+            padding: 0 10px;
+            line-height: 30px;
+            margin-bottom: -20px;
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 15px;
+                height: 28px;
+                margin-left: 5px;
+                background: url(../images/ico_add.png) no-repeat right center;
+                vertical-align: top;
+            }
+        }
+    }  
+    table {
+        border-top: 2px solid #73656E;
+        line-height: 44px;
+        background: #fff;
+        thead tr {
+            border-bottom: 1px solid #c7c1c5;
+        }
+        tbody tr {
+            transition: background 0.4s;
+            &:hover {
+                background: #FCF5F9;
+            }
+            &:last-child {
+                border-bottom: 1px solid #c7c1c5;
+            }
+        }
+        th {
+            color: #929394;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        td {
+            font-size: 14px;
+            color: #929394;
+            text-align: center;
+            
+            a {
+                font-weight: 500;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                transition:  all 0.4s;
+                &:hover {
+                    color: #C20073;
+                    text-decoration: underline;
+                }
+            }
+        }
+        td.ta-left {
+            color: #2c2c2e;
+            text-align: left;
+        }
+        td.ing {
+            color: #C20073;
+        }
+        td.number {
+            font-size: 14px;
+        }
+    }
+
+    .paging {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

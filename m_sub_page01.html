@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>은우소프트</title>
+    <link rel="stylesheet" href="css/m_reset.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/m_common.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <h2>입찰진행</h2>
+        </div>
+        <div class="main-wrap">
+            <div class="filter">
+                <table>
+                    <caption class="hidden">입찰진행</caption>
+                    <colgroup>
+                        <col style="width: 70px;">
+                        <col style="width: *%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">공고번호</th>
+                            <td>
+                                <input type="text" class="input-box" id="" name="" placeholder="공고번호">
+                            </td>
+                        </tr> 
+                        <tr>
+                            <th scope="row">공고명</th>
+                            <td><input type="text" class="input-box" id="" name="" placeholder="공고명"></td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">선정방식</th>
+                            <td>
+                                <select name="" id="" class="select-box">
+                                    <option value="">전체</option>
+                                    <option value="">전체체</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="hide">
+                            <th scope="row">진행형태</th>
+                            <td>
+                                <select name="" id="" class="select-box">
+                                    <option value="">전체</option>
+                                    <option value="">전체체</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="hide">
+                            <th scope="row">공고일자</th>
+                            <td>
+                                <div class="calender">
+                                    <div class="cal-wrap">
+                                        <input autocomplete="off" type="text" id="from" name="from" class="datepicker start-date input-box" placeholder="시작일">
+                                        <!-- <img src="images/ico_cal.png" alt="달력"> -->
+                                    </div>
+                                    ~
+                                    <div class="cal-wrap">
+                                        <input autocomplete="off" type="text" id="to" name="to" class="datepicker end-date input-box" placeholder="종료일">
+                                        <!-- <img src="images/ico_cal.png" alt="달력"> -->
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="hide">
+                            <th scope="row">입찰시작일</th>
+                            <td>
+                                <div class="calender">
+                                    <div class="cal-wrap">
+                                        <input autocomplete="off" type="text" id="from" name="from" class="datepicker start-date input-box" placeholder="시작일">
+                                        <!-- <img src="images/ico_cal.png" alt="달력"> -->
+                                    </div>
+                                    ~
+                                    <div class="cal-wrap">
+                                        <input autocomplete="off" type="text" id="to" name="to" class="datepicker end-date input-box" placeholder="종료일">
+                                        <!-- <img src="images/ico_cal.png" alt="달력"> -->
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="hide">
+                            <th scope="row">담당자</th>
+                            <td>
+                                <input type="text" class="input-box" id="" name="" placeholder="담당자">
+                            </td>
+                        </tr>
+                        <tr class="hide">
+                            <th scope="row">정렬조건</th>
+                            <td>
+                                <select name="" id="" class="select-box">
+                                    <option value="">전체</option>
+                                    <option value="">전체체</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="" class="mfilter-btn on">상세검색 열기</a>
+            </div> <!-- .filter End -->
+            <a href="" class="btn search btn_type3 side">조회</a>
+
+
+
+            <div class="sub-info">
+                <p class="">총 <span>1234</span>건</p>
+                <a href="" class="btn">엑셀 다운로드</a>
+            </div>
+            <div class="tb-wrap">
+                <table class="sub-tb01">
+                    <caption class="hidden">입찰진행공고</caption>
+                    <colgroup>
+                        <col span="2" style="width: 12%;">
+                        <col span="1" style="width: *%;">
+                        <col span="2" style="width: 14%;">
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 12%;">
+                    </colgroup>
+                    <thead>
+                        <th scope="col">입찰공고번호</th>
+                        <th scope="col">입찰공고일자</th>
+                        <th scope="col">입찰공고명</th>
+                        <th scope="col">선정방식</th>
+                        <th scope="col">입찰시작일시</th>
+                        <th scope="col">담당자</th>
+                        <th scope="col">진행상태</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="date">202008-022</td>
+                            <td class="date">2020-08-31</td>
+                            <td class="title">입찰공고명</td>
+                            <td>협상에의한계약</td>
+                            <td class="date">2020-07-20</td>
+                            <td>홍길동</td>
+                            <td class="stat active">작성</td>
+                        </tr> 
+                        <tr>
+                            <td class="date">202008-022</td>
+                            <td class="date">2020-08-31</td>
+                            <td class="title">입찰공고명 입찰공고명 입찰공고명 입찰공고명</td>
+                            <td>적격심사</td>
+                            <td class="date">2020-07-20</td>
+                            <td>홍길동</td>
+                            <td class="stat">진행(변경공고)</td>
+                        </tr> 
+                        <tr>
+                            <td class="date">202008-022</td>
+                            <td class="date">2020-08-31</td>
+                            <td class="title">입찰공고명 입찰공고명 입찰공고명 입찰공고명</td>
+                            <td>수의계약</td>
+                            <td class="date">2020-07-20</td>
+                            <td>홍길동</td>
+                            <td class="stat">진행(공고)</td>
+                        </tr> 
+                        <tr>
+                            <td class="date">202008-022</td>
+                            <td class="date">2020-08-31</td>
+                            <td class="title">입찰공고명 입찰공고명 입찰공고명 입찰공고명</td>
+                            <td>수의계약</td>
+                            <td class="date">2020-07-20</td>
+                            <td>홍길동</td>
+                            <td class="stat active">완료(낙찰)</td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+            <div class="page_wrap">
+                <div class="paging">
+                    <a href="" class="btn-start hidden">처음페이지</a>
+                    <a href="" class="btn-prev hidden">이전페이지</a>
+                    <a href="" class="on"><span>1</span>/ 50</a>
+                    
+                    <a href="" class="btn-next hidden">다음페이지</a>
+                    <a href="" class="btn-end hidden">마지막페이지</a>
+                </div>  <!--paging End-->
+            </div> <!--page_wrap End-->
+
+
+
+
+
+
+
+        </div> <!-- .main-wrap End -->
+        <div class="no-data">
+            <p>등록된 입찰 공고가 없습니다.</p>
+        </div>
+    </div>
+
+    <?include "./include/m_footer.html"?>
+
+
+
+</body>
+</html>

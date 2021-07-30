@@ -1,0 +1,36 @@
+#header {
+  width: 100%;
+}
+
+#header .hd_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: transparent;
+}
+
+#header h1 {
+  float: left;
+  width: 260px;
+}
+
+#header h1 a {
+  font-size: 0;
+  line-height: 0;
+  height: 90px;
+  background: url(../images/logo.png) no-repeat center center;
+}
+
+#header nav {
+  float: right;
+}
+
+#header nav ul li {
+  float: left;
+}
+
+#header nav ul li a {
+  font-size: 17px;
+  padding: 0 20px;
+  line-height: 90px;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>은우소프트</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/sub_page01.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+<body>
+    <div id="wrap" class="sub_hd">
+    <?include "./include/header.html"?>
+    
+    <div id="sub-wrap">
+        <?include "./include/lnb.html"?>
+        <div class="main-sec">
+            <div class="nav-bar clear">
+                <div class="breadcrumb">
+                    <ul>
+                        <li class="home">홈</li>
+                        <li>정보관리</li>
+                        <li>업무요약</li>
+                    </ul>
+                </div>
+                <div class="log-sec clear">
+                    <p>(주)은우소프트<span>님</span></p>
+                    <a href="" class="btn">로그아웃</a>
+                </div>
+            </div> <!-- .nav-bar End -->
+            <a href="" class="popup-banner"><span>진행중 입찰</span><br/>바로가기</a>
+
+            <h3>업무요약</h3>
+            <div class="tit-sec main-tit">
+                To-Do List
+                <a href="" class="btn">달력</a>
+                <div class="datepicker"></div>
+            </div>
+            <div class="tb-list">
+                <dl>
+                    <dt>사전규격</dt>
+                    <dd>
+                        <ul>
+                            <li class="todo-icon1">등록대기<p>99999</p></li>
+                            <li class="todo-icon2">공개중<p>2</p></li>
+                            <li class="todo-icon3">공개완료<a href="">3</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>계약</dt>
+                    <dd>
+                        <ul>
+                            <li class="todo-icon1">등록대기<p>0</p></li>
+                            <li class="todo-icon11">서명요청<a href="">8</a></li>
+                            <li class="todo-icon10">업체반려<p>5</p></li>
+                            <li class="todo-icon9">업체서명<p>1</p></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실적증명</dt>
+                    <dd>
+                        <ul>
+                            <li class="todo-icon12">증명신청<p>0</p></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>입찰</dt>
+                    <dd>
+                        <ul>
+                            <li class="todo-icon1">등록대기<p>6</p></li>
+                            <li class="todo-icon4">작성<p>3</p></li>
+                            <li class="todo-icon5">진행<p>0</p></li>
+                            <li class="todo-icon6">예가미등록<p>7</p></li>
+                            <li class="todo-icon7">개찰대기<p>1</p></li>
+                            <li class="todo-icon8">심의/협의중<p>12</p></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>업체승인</dt>
+                    <dd>
+                        <ul>
+                            <li class="todo-icon13">미승인<p>1</p></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div> <!-- .tb-list End -->
+            <div class="tb-chart">
+                <p class="main-tit">입찰</p>
+                <span class="tb-info">(2019-06-11 ~ 2021-06-11) 기준</span>
+                <table>
+                    <caption class="hidden">입찰을 나타내는 차트입니다</caption>
+                    <colgroup>
+                     <col style="width: 15%;">
+                     <col style="width: *%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>공사</th>
+                            <th>용역</th>
+                            <th>물품</th>
+                            <th>임대차</th>
+                            <th>매각</th>
+                            <th>주차장</th>
+                            <th>임대영업</th>
+                            <th>광고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>작성</th>
+                            <td class="num">1</td>
+                            <td class="num">1</td>
+                            <td class="num">1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>진행(공고)</th>
+                            <td class="num"><a href="">99</a></td>
+                            <td class="num">1</td>
+                            <td class="num">3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>진행(변경공고)</th>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>개찰</th>
+                            <td class="num">0</td>
+                            <td class="num">96</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>심의/협의중</th>
+                            <td>0</td>
+                            <td class="num">1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td class="num">6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>완료(낙찰)</th>
+                            <td class="num">20</td>
+                            <td class="num">1</td>
+                            <td class="num">20</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>완료(유찰)</th>
+                            <td class="num">1</td>
+                            <td>0</td>
+                            <td class="num">1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>완료(취소)</th>
+                            <td class="num">1</td>
+                            <td>0</td>
+                            <td class="num">1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="tb-info2"><span>인증서 제출</span> 인증서 만료일자는 <span>2020-12-31</span> 입니다.</p>
+            </div> <!-- tb-chart End -->
+
+        </div><!-- .main-sec End -->
+    </div> <!-- #sub-wrap End -->
+    <?include "./include/footer.html"?>
+</body>
+</html>

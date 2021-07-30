@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+
+
+
+
+.tit-sec {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+.tb01, .tb02 {
+    table {
+        th{
+            color: #929394;
+            background: #fafafa;
+        }
+        
+        .input-box {
+            width: 100%;
+        }
+    }
+}
+.tb01{
+    margin-bottom: 40px;
+    line-height: 49px;
+    tr {
+        border-top: 1px solid #E8E8E8;
+        &:last-child {
+            border-bottom: 1px solid #e8e8e8;
+        }
+    }
+    th {
+        padding: 0 20px;
+        font-size: 14px;
+        text-align: left;
+    }
+    td {
+        padding: 0px 10px;
+    }
+    
+    .input-box.txt {
+        width: 90%;
+        margin-right: 5px;
+        text-align: right;
+    }
+    .select-box {
+        width: 100%;
+    }
+    .chk-box {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .radio-box {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .address-sec {
+        font-size: 0;
+        input {
+            font-size: 14px;
+            vertical-align: middle;
+            &:first-child {
+                width: 20%;
+            }
+            &:nth-child(2) {
+                width: 38%;
+                margin: 0 1%;
+            }
+            &:last-child {
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+.tit-sec {
+    .btn {
+        float: right;
+        padding: 0 10px;
+        line-height: 30px;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 28px;
+            margin-left: 5px;
+            background: url(../images/ico_add.png) no-repeat right center;
+            vertical-align: top;
+        }
+    }
+}
+
+
+.tb02 {
+    border: solid #e8e8e8; border-width: 1px 0;
+    th {
+        font-size: 13px;
+        line-height: 39px;
+        border: 1px solid #e8e8e8;
+        &:last-child{
+            border-right: 0 none;
+        }
+        &:first-child {
+            border-left: 0 none;
+        }
+    }
+    td {
+        line-height: 49px;
+        padding: 0px 5px;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #e8e8e8;
+        &:last-child{
+            border-right: 0 none;
+        }
+        &:first-child {
+            border-left: 0 none;
+        }
+    }
+}
+
+.btn-box {
+    margin-top: 40px;
+    text-align: center;
+    a {
+        display: inline-block;
+        margin-right: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

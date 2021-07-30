@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>은우소프트</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/sub_page06.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+   
+</head>
+
+<body>
+<div id="wrap" class="sub_hd">
+    <?include "./include/header.html"?>
+
+    <div id="sub-wrap">
+        <?include "./include/lnb-login.html"?>
+        <div class="main-sec">
+            <div class="nav-bar clear">
+                <div class="breadcrumb">
+                    <ul>
+                        <li class="home">홈</li>
+                        <li>정보관리</li>
+                        <li>입찰진행</li>
+                    </ul>
+                </div>
+                <div class="log-sec clear">
+                    <p>(주)은우소프트<span>님</span></p>
+                    <a href="" class="btn">로그아웃</a>
+                </div>
+            </div> <!-- .nav-bar End -->
+            <h3>계약진행</h3>
+            <div class="detail-tab clear">
+                <a href="" class="">계약일반</a>
+                <a href="" class="on">보증증권</a>
+            </div>
+        
+
+            <table class="ta-row">
+                <caption class="hidden">계약일반</caption>
+                <colgroup>
+                    <col style="width: 20%;">
+                    <col style="width: 80%;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>계약업체</th>
+                        <td>이노에버솔루션</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="cont-tit">첨부파일</p>
+
+            <table class="ta-center">
+                <caption class="hidden">첨부파일</caption>
+                <colgroup>
+                    <col style="width: 10%;">
+                    <col style="width: 8%;">
+                    <col style="width: 15%;">
+                    <col span="5" style="width: *%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">붙임서류명</th>
+                        <th scope="col">차수</th>
+                        <th scope="col">증권번호</th>
+                        <th scope="col">보증금액</th>
+                        <th scope="col">보증기간</th>
+                        <th scope="col">발급일자</th>
+                        <th scope="col">발급기관</th>
+                        <th scope="col">보증서파일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>계약이행</td>
+                        <td class="date">1</td>
+                        <td class="date">제100-000-2020 0251 9104호</td>
+                        <td class="price">6,242,500</td>
+                        <td class="date">2020/06/05 ~ 2020/11/02</td>
+                        <td class="date">2020/06/13</td>
+                        <td>서울보증보험 주식회사</td>
+                        <td><a href="" class="btn btn_type4">다운로드</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!-- .main-sec End -->
+
+
+
+
+    </div> <!-- #sub-wrap End -->
+    <?include "./include/footer.html"?>
+</div> <!-- .sub_hd End -->
+</body>
+
+
+</html>

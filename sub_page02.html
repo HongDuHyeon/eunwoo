@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>은우소프트</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/sub_page02.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+<body>
+<div id="wrap" class="sub_hd">
+    <?include "./include/header.html"?>
+    
+    <div id="sub-wrap">
+        <?include "./include/lnb.html"?>
+        <div class="main-sec">
+            <div class="nav-bar clear">
+                <div class="breadcrumb">
+                    <ul>
+                        <li class="home">홈</li>
+                        <li>정보관리</li>
+                        <li>업체관리</li>
+                    </ul>
+                </div>
+                <div class="log-sec clear">
+                    <p>(주)은우소프트<span>님</span></p>
+                    <a href="" class="btn">로그아웃</a>
+                </div>
+            </div> <!-- .nav-bar End -->
+            <a href="" class="popup-banner"><span>진행중 입찰</span><br/>바로가기</a>
+            <h3>업체관리</h3>
+            <div class="tit-sec">
+                일반현황
+            </div>
+            <table class="tb01">
+                <caption class="hidden">일반현황</caption>
+                <colgroup>
+                    <col style="width:19%">
+                    <col style="width:31%">
+                    <col style="width:19%">
+                    <col style="width:31%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">공급업체코드</th>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="공급업체코드" ></td>
+                        <th scope="row">사업자등록번호</th>
+                        <td><input type="number" id="" name="" class="input-box" placeholder="사업자등록번호" ></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">구분</th>
+                        <td colspan="3">
+                            <div>
+                                <span class="chk-box">
+                                    <input type="checkbox" id="chk01" checked>
+                                    <label for="chk01">일반구매</label>
+                                </span>
+                                <span class="chk-box">
+                                    <input type="checkbox" id="chk02" checked>
+                                    <label for="chk02">제조구매</label>
+                                </span>
+                                <span class="chk-box">
+                                    <input type="checkbox" id="chk03">
+                                    <label for="chk03">공사,용역</label>
+                                </span>
+                                <span class="chk-box">
+                                    <input type="checkbox" id="chk04">
+                                    <label for="chk04">부대사업</label>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                         <th scope="row">회사명</th>
+                         <td colspan="3"><input type="text" id="" name="" class="input-box" placeholder="회사명" ></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">대표자명</th>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="대표자명" ></td>
+                        <th scope="row">설립년도</th>
+                        <td><input type="number" id="" name="" class="input-box txt" placeholder="설립년도">년</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">대표전화</th>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="대표전화" ></td>
+                        <th scope="row">팩스</th>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="팩스" ></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주소</th>
+                        <td colspan="3" class="address-sec">
+                            <input type="number" id="" name="" class="input-box" placeholder="우편번호" >
+                            <input type="text" id="" name="" class="input-box" placeholder="기본주소" >
+                            <input type="text" id="" name="" class="input-box" placeholder="상세주소" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">법인번호</th>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="법인번호" ></td>
+                        <th scope="row">대표자 생년월일</th>
+                        <td><input type="number" id="" name="" class="input-box" placeholder="대표자 생년월일" ></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">자본금</th>
+                        <td><input type="text" id="" name="" class="input-box txt" placeholder="자본금">원</td>
+                        <th scope="row">기업형태</th>
+                        <td>
+                            <select name="" id="" class="select-box">
+                                <option value="">법인사업자</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">사업형태</th>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="사업형태" ></td>
+                        <th scope="row">사업종목</th>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="사업종목" ></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기업규모</th>
+                        <td colspan="3">
+                            <select name="" id="" class="select-box">
+                                <option value="">법인사업자</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">가능품목</th>
+                        <td colspan="3">
+                            <select name="" id="" class="select-box">
+                                <option value="">법인사업자</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제조품목</th>
+                        <td colspan="3">
+                            <select name="" id="" class="select-box">
+                                <option value="">법인사업자</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">신용평가 등급</th>
+                        <td colspan="3"><input type="text" class="input-box" placeholder="신용평가 등급" ></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">신용평가기관</th>
+                        <td colspan="3">
+                            <div>
+                                <span class="radio-box">
+                                    <input type="radio" id="user1" name="user" checked>
+                                    <label for="user1">Nice DnB</label>
+                                </span>
+                                <span class="radio-box">
+                                    <input type="radio" id="user2" name="user">
+                                    <label for="user2">이크레더블</label>
+                                </span>
+                                <span class="radio-box">
+                                    <input type="radio" id="user3" name="user">
+                                    <label for="user3">한국기업데이터</label>
+                                </span>
+                                <span class="radio-box">
+                                    <input type="radio" id="user4" name="user">
+                                    <label for="user4">기타</label>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> <!-- .tb01 End-->
+
+            <div class="tit-sec">
+                면허 정보 - 조달청 정보
+                <a href="" class="btn">추가</a>
+            </div>
+
+            <table class="tb02">
+                <caption class="hidden">면허 정보 - 조달청 정보</caption>
+                <colgroup>
+                    <col style="width:7%">
+                    <col style="width:18%">
+                    <col style="width:16%">
+                    <col style="width:*%">
+                    <col style="width:16%">
+                    <col style="width:*%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">번호</th>
+                        <th colspan="2" scope="col">업종명</th>
+                        <th scope="col">업종코드</th>
+                        <th scope="col">등록번호</th>
+                        <th scope="col">시공능력평가액</th>
+                        <th rowspan="2" scope="col">대표업종</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">업종취득일자</th>
+                        <th scope="col">유효기관만료일자</th>
+                        <th scope="col">평가액기준년도</th>
+                        <th scope="col">등록일자</th>
+                        <th scope="col">갱신일자</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td colspan="2"><input type="text" id="" name="" class="input-box" placeholder="업종명"></td>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="업종코드"></td>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="등록번호"></td>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="시공능력평가액"></td>
+                        <td rowspan="2"><input type="text" id="" name="" class="input-box" placeholder="대표업종"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="업종취득일자"></td>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="유효기관만료일자"></td>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="평가액기준년도"></td>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="등록일자"></td>
+                        <td><input type="text" id="" name="" class="input-box" placeholder="갱신일자"></td>
+                    </tr>
+                </tbody>
+            </table> <!-- .tb02 End-->
+
+            <div class="btn-box">
+                <a href="" class="btn btn_type3">승인취소</a>
+                <a href="" class="btn btn_type3">ERP전송</a>
+                <a href="" class="btn btn_type3">휴폐업조회</a>
+                <a href="" class="btn btn_type3">신용평가정보</a>
+                <a href="" class="btn btn_type3">승인이력</a>
+                <a href="" class="btn btn_type3">담당자조회</a>
+                <a href="" class="btn btn_type3">부정당업자</a>
+                <a href="" class="btn btn_type1">저장</a>
+                <a href="" class="btn">목록</a>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+    <?include "./include/footer.html"?>
+</div> <!-- #wrap .sub_hd End-->
+</body>
+</html>

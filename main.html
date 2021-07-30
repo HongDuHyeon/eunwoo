@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>은우소프트</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+
+
+
+<?include "./include/header.html"?>
+
+    <section class="main_visual"> 
+        <p>행복한 순간, 소중한 기억 <span>함께하는 SR</span></p>
+    </section>
+    <section class="contents">
+        <article>
+            <div class="info-box">
+                <h2>이용안내</h2>
+                <p class="tit-box">전자조달시스템 이용방법을<br/>안내해 드립니다</p>
+                <ul class="txt-box">
+                    <li><a href="">공인인증서 발급방법</a></li>
+                    <li><a href="">회원가입 방법</a></li>
+                    <li><a href="">전자입찰 참여방법</a></li>
+                    <li><a href="">전자실적 증명서 발급방법</a></li>
+                    <li><a href="">기성 신청방법</a></li>
+                    <li><a href="">전자세금계산서 제출방법</a></li>
+                </ul>
+            </div> 
+            <div class="main-box">
+                
+                <div class="main-menu">
+                    <a href="" class="on">입찰공고</a>
+                    <a href="">개찰결과</a>
+                </div>
+                <div class="tb-wrap">
+                    <div class="tb-menu">
+                        <a href="" class="active"><span>전체</span></a>
+                        <a href=""><span>공사</span></a>
+                        <a href=""><span>용역</span></a>
+                        <a href=""><span>물품</span></a>
+                        <a href=""><span>임대</span></a>
+                        <a href=""><span>매각</span></a>
+                        <a href=""><span>주차장</span></a>
+                        <a href=""><span>임대영업</span></a>
+                        <a href=""><span>광고</span></a>
+                    </div>
+                    <div class="tb-box type1">
+                        <!-- table -->
+                        <table>
+                            <caption class="hidden">입찰공고 게시판</caption>
+                            <colgroup>
+                                <col span="1" style="width:*%;">
+                                <col span="3" style="width:18%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="ta-left">입찰명</th>
+                                    <th scope="col">입찰공고일</th>
+                                    <th scope="col">입찰시작일</th>
+                                    <th scope="col">입찰마감일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="tit"><a href="">2020년 실내공기질 측정</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="date">2020-07-08</td>
+                                    <td class="date">2020-07-09</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">그룹웨어 고도화 서버 구매 그룹웨어 고도화 서버 구매</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="date">2020-07-08</td>
+                                    <td class="date">2020-07-09</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">2020년 실내공기질 측정</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="date">2020-07-08</td>
+                                    <td class="date">2020-07-09</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <!-- .tb-box End -->
+                    <div class="tb-box type2">
+                        <!-- table2 -->
+                        <table>
+                            <caption class="hidden">개찰결과 게시판</caption>
+                            <colgroup>
+                                <col span="1" style="width:*%;">
+                                <col span="2" style="width:18%;">
+                            </colgroup>
+                            <thead>
+                                <th scope="col" class="ta-left">입찰명</th>
+                                <th scope="col">개찰일자</th>
+                                <th scope="col">개찰상태</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="tit"><a href="">[수의시담] 전자조달시스템 고도화 용역</a></td>
+                                    <td class="date">2020-07-08</td>
+                                    <td class="status">진행(공고)</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">그룹웨어 고도화 서버 구매 그룹웨어 고도화 서버 구매</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="status">진행(변경공고)</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">[재공고] SR 유튜브 영상제작 및 운영 용역</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="status">진행(재입찰)</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">[수의시담] SRT 전두부 해치커버 구매</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="status">개찰</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">[재공고] SRT 객실의자 잡지꽂이(MAGAZINE NET) 구매</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="status">심의/협의중</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">[수의시담] 전자조달시스템 고도화 용역</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="status">심의/협의중</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">2020년 실내공기질 측정</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="status finish">완료(낙찰)</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">[재공고] SR 유튜브 영상제작 및 운영 용역</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="status finish">완료(유찰)</td>
+                                </tr>
+                                <tr>
+                                    <td class="tit"><a href="">[수의시담] SRT 전두부 해치커버 구매</a></td>
+                                    <td class="date">2020-07-03</td>
+                                    <td class="status finish">완료(취소)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <!-- .tb-box End -->
+                </div> <!-- .tb-wrap End -->
+            </div> <!-- .main-box End -->
+            <div class="util-box">
+                <div class="login-box">
+                    <h2>로그인</h2>
+                    <input type="number" id="" name="" placeholder="'-없이 숫자만 입력'"/>
+                    <ul class="clear">
+                        <li class="btn_type3"><a href="">공인인증서</a></li>
+                        <li class="btn_type1"><a href="">로그인</a></li>
+                    </ul>
+                    <a href="" class="join-btn">회원가입</a>
+                </div>
+                <div class="datepicker"></div>
+            </div> <!-- .util-box End -->
+        </article>
+        <div class="slide-menu swiper-container">
+            <div class="slide-btn">
+                <a href="" class="btn-prev swiper-button-prev">이전</a>
+                <a href="" class="btn-next swiper-button-next">다음</a>
+            </div>
+            <div class="menu-wrap swiper-wrapper">
+                <div class="menu-list item swiper-slide">
+                    <a href="" class="main-icon1">발주계획</a>
+                    <a href="" class="main-icon2">사전공개현황</a>
+                    <a href="" class="main-icon3">입찰현황</a>
+                    <a href="" class="main-icon4">계약현황</a>
+                    <a href="" class="main-icon5">실적증명서 발급확인</a>
+                    <a href="" class="main-icon6">규정 및 서식</a>
+                    <a href="" class="main-icon7">표준규격서</a>
+                </div>
+                <div class="menu-list item02 swiper-slide">
+                    <a href="" class="main-icon8">철도안전용품</a>
+                    <a href="" class="main-icon9">시험성적서</a>
+                    <a href="" class="main-icon10">물품정보</a>
+                    <a href="" class="main-icon11">하도급현황</a>
+                </div>
+            </div> 
+        </div> <!-- slide-menu End -->
+        <article class="sub-content">
+            <div class="main-notice">
+                <h2>공지사항</h2>
+                <a href="" class="link-more">공지사항 더보기</a>
+                <ul>
+                    <li><a href="">수의계약 정보공개('20년 1월 ~ 3월)</a><span>2020-04-14</span></li>
+                    <li><a href="">수의계약 정보공개('19년 7월 ~ 9월)수의계약 정보공개('20년 1월 ~ 3월)수의계약 정보공개('20년 1월 ~ 3월)</a><span>2020-01-07</span></li>
+                    <li><a href="">수의계약 정보공개('19년 4월 ~ 6월)수의계약 정보공개('20년 1월 ~ 3월)수의계약 정보공개('20년 1월 ~ 3월)</a><span>2020-01-07</span></li>
+                </ul>
+            </div>
+            <div class="main-faq">
+                <h2>FAQ</h2>
+                <a href="" class="link-more ico-w">FAQ 더보기</a>
+                <ul>
+                    <li><a href="">보안토큰 사전 점검 안내 및 FAQ</a></li>
+                    <li><a href="">지문인식 보안토큰 인식 오류시 해결 가나다라마바사</a></li>
+                    <li><a href="">원가계산용역에 참여하고 싶습니다. 가나다라마바사</a></li>
+                </ul>
+            </div>
+            <div class="manual-wrap">
+                <a href="" class="main-manual">
+                    <p class="manual-tit">메뉴얼 다운로드</p>
+                    <p>업무를 불편함 없이 이용하실 수<br/>있도록  안내해 드립니다</p>
+                </a>
+                <a href="" class="btn_type1">원격기술지원요청</a>
+            </div>                
+        </article>
+        <article class="help-info">
+            <div class="help-wrap">
+                <dl>
+                    <dt>Help-Desk</dt>
+                    <dd><span>업무문의</span>02-6484-4498</dd>
+                    <dd><span>시스템</span>02-841-0721</dd>
+                    <dd class="time">평일 9시 ~ 6시 (점심시간 12시 ~ 1시)</dd>
+                </dl>
+            </div>
+        </article>
+    </section> <!-- .content End -->
+
+    <?include "./include/footer.html"?>
+
+</div> 
+</body>
+</html>
+    

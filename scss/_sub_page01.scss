@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+
+
+
+
+
+ // main-sec layout
+
+
+
+
+.tit-sec {
+    margin-bottom: 20px;
+    .btn {
+        position: relative;
+        float: right;
+        line-height: 34px;
+        padding: 0 10px;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 13px;height: 36px;
+            margin-left: 10px;
+            background: url(../images/calender.png) no-repeat center;
+            vertical-align: top;
+        }
+    }
+    .datepicker {
+        display: none;
+        position: absolute;bottom: -344px;right: 0;
+    }
+}
+
+.tb-list {
+    display: flex;
+    flex-wrap: wrap;
+    dl {
+        width: 17%;
+        margin-left: 10px;
+        border: 1px solid #dedede;
+        &:first-child {
+            width: 35%;
+            margin-left: 0 ;
+        }
+        &:nth-child(2) {
+            width: calc(48% - 20px);
+            
+        }
+        &:nth-child(4) {
+            width: calc(83% - 10px);
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        &:last-child {
+            margin-top: 10px;
+        }
+    }
+    dt {
+        color: #C20073;
+        text-align: center;
+        background: #FCF5F9;
+        border-bottom: 1px solid #dedede;
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+$subIcon : (todo-icon1, todo-icon2, todo-icon3, todo-icon4, todo-icon5, todo-icon6, todo-icon7, todo-icon8, todo-icon9, todo-icon10, todo-icon11, todo-icon12, todo-icon13 );
+
+    dd {
+        padding: 25px 20px;
+        ul {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            li {
+                display: table-cell;
+                text-align: center;
+                font-size: 13px;
+                color: #929394;
+                vertical-align: middle;
+                &:before {
+                    content: '';
+                    display: block;
+                    height: 24px;
+                    margin-bottom: 15px;
+                }
+                p,a{
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-family: 'Montserrat';
+                    color: #2c2c2e;
+                }
+                a {
+                    color: #c20073;
+                    text-decoration: underline;
+                }
+            }
+            @each $icon in $subIcon {
+                li.#{$icon} {
+                    &:before{
+                        content: '';
+                        display: block;
+                        height: 24px;
+                        margin-bottom: 15px;
+                        background: url(../images/#{$icon}.png) no-repeat center center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tb-chart {
+    margin-top: 40px;
+    .main-tit {
+        font-size: 21px;
+        display: inline-block;
+    }
+    .tb-info {
+        color: #929394;
+        font-size: 15px;
+    }
+    .tb-info2 {
+        margin-top: 20px;
+        span {
+            font-weight: 500;
+            &:first-child {
+                padding-right: 10px;
+            }
+        }
+    }
+    table {
+        margin-top: 24px;
+        line-height: 49px;
+        border: 1px solid #e8e8e8;
+        thead th {
+            background: #fafafa;
+        }
+        tbody th, td{color: #929394;}
+        tbody {
+            tr {
+                border-top: 1px solid #e8e8e8;
+            }
+            th{
+                font-size: 14px;
+                padding-left: 20px;
+                text-align: left;
+                background: #fff !important;
+            }
+            td {
+                text-align: center;
+                font-weight: 500;
+                font-family: 'Montserrat';
+            }
+        }
+        
+        
+        .num {
+            color: #2c2c2c;
+            a {font-weight: 600;
+                text-decoration: underline;
+                color: #C20073;
+                transition: all 0.4s;
+                &:hover {
+                    text-decoration: underline;
+                    color: #C20073;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

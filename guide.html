@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>은우소프트 HTML 리스트</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            // $('#date').datepicker({
+            //     dateFormat: 'yy년mm월dd일',
+            //     showAnim: "slide",
+            //     dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],	//한글 캘린더 요일 표시 부분
+            //     dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],	//한글 요일 표시 부분
+            //     dayNames: ['일', '월', '화', '수', '목', '금', '토'],	// 한글 요일 표시 부분
+            //     monthNames: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],	//한글 캘린더중 월 표시를 위한 부분
+            //     yearSuffix: '.',
+            //     showMonthAfterYear: true,
+            // });
+            $('.datepicker').datepicker({
+                dateFormat: 'yy년mm월dd일',
+                showOn: 'both',
+                buttonImage: "images/ico_cal.png",
+                constrainInput: false,
+                buttonImageOnly: true,
+                dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],	//한글 캘린더 요일 표시 부분
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],	//한글 요일 표시 부분
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],	// 한글 요일 표시 부분
+                monthNames: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],	//한글 캘린더중 월 표시를 위한 부분
+                yearSuffix: '.',
+                showMonthAfterYear: true,
+            })
+            dialog = $('#popup-certif').dialog({
+                autoOpen: false,
+                width: 665,
+                modal: true,
+                resizable : false,
+                });
+            $( "#popup-btn" ).button().on( "click", function() {
+                dialog.dialog( "open" );
+                return false;
+            });
+            $( ".popup-close" ).button().on( "click", function() {
+                dialog.dialog( "close" );
+                return false;
+            });
+        });
+    </script>
+<body>
+<div class="guide_wrap">
+    <section>
+        <h1>button</h1>
+        <div class="btn_wrap">
+            <span class="line">- btn</span>
+            <button type="button" class="btn">default</button>
+            <button type="button" class="btn btn_type1">type1</button>
+            <button type="button" class="btn btn_type2">type2</button>
+            <button type="button" class="btn btn_type3">type3</button>
+            <button type="button" class="btn btn_type4">type4</button>
+            <br/>
+            <button type="button" class="btn btn_w">default</button>
+            <button type="button" class="btn_w btn_type1">type1</button>
+            <button type="button" class="btn_w btn_type2">type2</button>
+            <button type="button" class="btn_w btn_type3">type3</button>
+            <button type="button" class="btn_w btn_type4">type4</button>
+            <br/>
+        </div> <!--btn_wrap End-->
+        <div class="icon-btn-wrap">
+            <span class="line">- icon btn</span>
+            <a href="" class="link-more hidden">더보기</a>
+            <a href="" class="link-more ico-w hidden">더보기</a>
+        </div>
+        <div class="page_wrap">
+            <span class="line">- paging</span>
+            <div class="paging">
+                <a href="" class="btn-start hidden">처음페이지</a>
+                <a href="" class="btn-prev hidden">이전페이지</a>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="" class="on">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+                <a href="" class="btn-next hidden">다음페이지</a>
+                <a href="" class="btn-end hidden">마지막페이지</a>
+            </div>  <!--paging End-->
+        </div> <!--page_wrap End-->
+    </section>
+    <section>
+        <h1>component</h1>
+        <div class="input_wrap">
+            <span class="line">- Input</span>
+            <input type="text" placeholder="Input Default" class="input-box"/>
+            <input type="text" placeholder="Input Disabled" disabled class="input-box off"/>
+        </div> <!--input_wrap End-->
+        <div>
+            <span class="line">- select</span>
+            <select class="select-box">
+                <option value="opt1">선택</option>
+                <option value="opt1">opt1</option>
+                <option value="opt2">opt2</option>
+                <option value="opt3">opt3</option>
+                <option value="opt4">opt4</option>
+            </select>
+            <select class="select-box" disabled>
+                <option value="opt1">선택</option>
+                <option value="opt1">opt1</option>
+                <option value="opt2">opt2</option>
+                <option value="opt3">opt3</option>
+                <option value="opt4">opt4</option>
+            </select>
+        </div>
+        <div class="ta-wrap">
+            <span class="line">- textarea</span>
+            <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+        </div>
+        <div class="check-wrap">
+            <span class="line">- checkBox &amp; Radio</span>
+            <div class="box-wrap">
+                <div class="chk-box">
+                    <input type="checkbox" id="user1" name="user1" checked/>
+                    <label for="user1">checkBox</label>
+                </div>
+                <div class="chk-box">
+                    <input type="checkbox" id="user2" name="user2"/>
+                    <label for="user2">checkBox</label>
+                </div>
+            </div><!--box-wrap End-->
+            <br/>
+            <div class="radio-box">
+                <input type="radio" id="user01" name="user02"/>
+                <label for="user01">radio</label>
+                <input type="radio" id="user02" name="user02"/>
+                <label for="user02">radio</label>
+            </div><!--radio-box End-->
+        </div> <!--check-wrap End-->
+        <div class="calender-wrap">
+            <span class="line">- datepicker</span>
+            <div class="datepicker"></div>
+        </div>
+        <div class="login-wrap">
+            <span class="line">- login box</span>
+            <div class="login-box">
+                <h2>로그인</h2>
+                <input type="number" id="" name="" placeholder="'-없이 숫자만 입력'"/>
+                <ul class="clear">
+                    <li class="btn_type3"><a href="">공인인증서</a></li>
+                    <li class="btn_type1"><a href="">로그인</a></li>
+                </ul>
+                <a href="" class="join-btn">회원가입</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Popup</h1>
+        <span class="line">- layer <span class="sub">(jquery UI - dialog 사용)</span></span>
+        <div id="#popup-open">
+            <a href="" id="popup-btn" class="btn">전자실적증명서 발급</a>
+            <div id="popup-certif">
+                <h2>전자실적증명서 발급</h2>
+                <button type="button" class="popup-close">닫기</button>
+                <p>전자계약으로 진행한 내용만 신청이 가능합니다.<br/>기존 계약의 실적증명서는 시행부서의 담당자에게 공문 접수 후 아래 절차에 의해 처리하여 주시기 바랍니다.</p>
+                <dl>
+                    <dt>전자실적증명서 신청절차</dt>
+                    <dd class="dot ico05">전자조달시스템 로그인</dd>
+                    <dd class="dot ico05">실적증명 메뉴 버튼 클릭</dd>
+                    <dd class="dot ico05">실적증명이 필요한 계약완료 건 클릭</dd>
+                    <dd class="dot ico05">실적증명 정보 확인 및 작성</dd>
+                    <dd class="dot ico05">전자실적증명 신청버튼 클릭</dd>
+                </dl>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sub-wrap">
+        <h1>Sub</h1>
+            <span class="line">- title</span>
+            <h2 class="main-tit">1차 Title</h2>
+            <h3 class="sub-tit">2차 타이틀</h3>
+        </div>
+        <div>
+            <span class="line">- Top Tab <span class="sub">(한줄에 5개 기준)</span></span>
+            <div class="main-tab clear">
+                <a href="" class="on">Tab01</a>
+                <a href="">Tab02</a>
+                <a href="">Tab03</a>
+                <a href="">Tab04</a>
+                <a href="">Tab05</a>
+                <a href="">Tab06</a>
+                <a href="">Tab07</a>
+                <a href="">Tab08</a>
+            </div>
+            <span class="line">- Detail tab <span class="sub">(갯수 상관없이 한줄정렬)</span></span>
+            <div class="detail-tab clear">
+                <a href="" class="on">Tab01</a>
+                <a href="" class="">Tab02</a>
+                <a href="" class="" >Tab03</a>
+                <a href="" class="disabled">Tab05</a>
+                <a href="" class="">Tab07</a>
+                <a href="" class="disabled">Tab08</a>
+            </div>
+        </div>
+        <div>
+            <span class="line">- search</span>
+            <!-- <div class="search-wrap">
+                <div class="search">
+                    <label for="search01">검색항목01</label>
+                    <input type="text" id="search01" name="search01" placeholder="검색항목01"/>
+                </div>
+                <div class="search">
+                    <label for="search02">검색항목02</label>
+                    <input type="text" id="search02" name="search02" placeholder="검색항목02"/>
+                </div>
+            </div> -->
+            <div class="filter ">
+                <a href="" class="filter-btn">상세검색필터 보기</a>
+                <div class="search-wrap">
+                    <div class="search">
+                        <label for="search01">검색항목01</label>
+                        <input autocomplete="off" type="text" id="search01" name="search01" placeholder="검색항목01" class="input-box"/>
+                    </div>
+                    <div class="search">
+                        <label for="search02">검색항목02</label>
+                        <input autocomplete="off" type="text" id="search02" name="search02" placeholder="검색항목02" class="input-box"/>
+                    </div>
+                    <div class="search">
+                        <label for="search">검색항목03</label>
+                        <select name="search">
+                            <option value="">검색01</option>
+                            <option value="">검색02</option>
+                            <option value="">검색03</option>
+                            <option value="">검색04</option>
+                            <option value="">검색05</option>
+                        </select>
+                    </div>
+                </div> <!-- search-wrap End -->
+                <div class="search-wrap">
+                    <div class="search">
+                        <label for="search">검색항목04</label>
+                        <select name="search">
+                            <option value="">검색01</option>
+                            <option value="">검색02</option>
+                            <option value="">검색03</option>
+                            <option value="">검색04</option>
+                            <option value="">검색05</option>
+                        </select>
+                    </div>
+                    <div class="search">
+                        <label for="search02">검색항목05</label>
+                        <input autocomplete="off" type="text" id="search02" name="search02" placeholder="검색항목02" class="input-box"/>
+                    </div>
+                    <div class="search">
+                        <label for="search">검색항목06</label>
+                        <select name="search">
+                            <option value="">검색01</option>
+                            <option value="">검색02</option>
+                            <option value="">검색03</option>
+                            <option value="">검색04</option>
+                            <option value="">검색05</option>
+                        </select>
+                    </div>
+                </div> <!-- search-wrap End -->
+                <div class="search-wrap type02">
+                    <div class="search">
+                        <label for="from">검색항목07</label>
+                        <div class="calender">
+                            <div class="cal-wrap">
+                                <input autocomplete="off" type="text" id="from" name="from" class="datepicker start-date input-box" placeholder="시작일">
+                                <!-- <img src="images/ico_cal.png" alt="달력"> -->
+                            </div>
+                            ~
+                            <div class="cal-wrap">
+                                <input autocomplete="off" type="text" id="to" name="to" class="datepicker end-date input-box" placeholder="종료일">
+                                <!-- <img src="images/ico_cal.png" alt="달력"> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <label for="from2">검색항목08</label>
+                        <div class="calender">
+                            <div class="cal-wrap">
+                                <input autocomplete="off" type="text" id="from2" name="from2" class="datepicker start-date input-box" placeholder="시작일">
+                                <!-- <img src="images/ico_cal.png" alt="달력"> -->
+                            </div>
+                            ~
+                            <div class="cal-wrap">
+                                <input autocomplete="off" type="text" id="to2" name="to2" class="datepicker end-date input-box" placeholder="종료일">
+                                <!-- <img src="images/ico_cal.png" alt="달력"> -->
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <span class="line">- table</span>
+                <table class="type01">
+                    <caption class="hidden">type01 table의 내용</caption>
+                    <colgroup>
+                        <col width="15%">
+                        <col width="30%">
+                        <col width="15%">
+                        <col span="4" width="10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">th01</th>
+                            <th scope="col">th02</th>
+                            <th scope="col">th03</th>
+                            <th scope="col">th04</th>
+                            <th scope="col">th05</th>
+                            <th scope="col">th06</th>
+                            <th scope="col">th07</th>
+                        </tr>
+                    </thead>    
+                    <tbody>
+                        <tr>
+                            <td>td01</td>
+                            <td>td02</td>
+                            <td>td03</td>
+                            <td>td04</td>
+                            <td>td05</td>
+                            <td>td06</td>
+                            <td>td07</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="type02">
+                    <caption class="hidden">type02 table의 내용</caption>
+                    <colgroup>
+                        <col width="15%">
+                        <col width="30%">
+                        <col width="15%">
+                        <col span="4" width="10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">th01</th>
+                            <th scope="col">th02</th>
+                            <th scope="col">th03</th>
+                            <th scope="col">th04</th>
+                            <th scope="col">th05</th>
+                            <th scope="col">th06</th>
+                            <th scope="col">th07</th>
+                        </tr>
+                    </thead>    
+                    <tbody>
+                        <tr>
+                            <td>td01</td>
+                            <td>td02</td>
+                            <td>td03</td>
+                            <td>td04</td>
+                            <td>td05</td>
+                            <td>td06</td>
+                            <td>td07</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <table class="type03">
+                    <caption class="hidden">type03 table의 내용</caption>
+                    <colgroup>
+                        <col span="4"width="25%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">th01</th>
+                            <td>td01</td>
+                            <th scope="row">th02</th>
+                            <td>td02</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- table-wrap End-->
+            <div class="bullet-wrap">
+                <span class="line">- Bullet Info</span>
+                <ul>
+                    <li class="dot ico01">Dot Info</li>
+                    <li class="dot ico02">Dot Info</li>
+                    <li class="dot ico03">Dot Info</li>
+                    <li class="dot ico04">Dot Info</li>
+                    <li class="dot ico05">Dot Info</li>
+                    <li class="dot ico06">Dot Info</li>
+                </ul>
+            </div> <!-- bullet-wrap End -->
+        </div> <!-- sub-wrap End -->
+    </section>
+</div> <!--guide_wrap End -->
+</body>
+</head>
+</html> 
